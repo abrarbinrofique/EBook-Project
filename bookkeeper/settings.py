@@ -30,6 +30,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'https://ebookproject.onrender.com',
+]
+
+ALLOWED_HOSTS = [
+    'localhost',
+    'ebookproject.onrender.com',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8000',
+    'https://ebookproject.onrender.com',
+]
+
 ALLOWED_HOSTS = ['*']
 
 
